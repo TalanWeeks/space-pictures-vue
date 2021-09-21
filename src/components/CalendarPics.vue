@@ -2,13 +2,13 @@
   <form @submit.prevent="getPic" class="m-2">
     <input v-model="state.newDate" type="date" id="Test_Date" class="m-2">
     <button class="btn px-2 py-0" type="submit">
-      <i class="mdi mdi-earth f-18"></i>
+      <i class=" bg-warning mdi mdi-earth f-18"></i>
     </button>
   </form>
   <div v-if="date" class="container-fluid">
     <div class="row d-felx justify-content-center">
-      <div class="col-6">
-        <div class="card rounded bg-warning shadow">
+      <div class="col-6 mb-5 p-3 glow bg-warning">
+        <div class="card rounded bg-warning shadow ">
           <div class="card-header m-1">
             <h1>NASA PHOTOS</h1>
             <h3>Date of photo: {{ date }}</h3>
@@ -55,8 +55,11 @@ export default {
 
 <style>
 .img-sizing{
-
   height:80vh;
-
+}
+.glow{
+-webkit-box-shadow:0px 0px 9px 9px rgba(45,255,196,0.9);
+-moz-box-shadow: 0px 0px 9px 9px rgba(45,255,196,0.9);
+box-shadow: 0px 0px 9px 9px rgba(45,255,196,0.9);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="calendar container-fluid bg-dark">
+  <div class="calendar container-fluid bg-dark ">
     <div class="row my-3 text-center">
       <div class="col-12">
         <CalendarPics />
