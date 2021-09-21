@@ -1,8 +1,7 @@
 <template>
-  <div class="calendar">
-    <div class="row my-3">
-      <div class="col-8">
-        <h1>This is the calander page</h1>
+  <div class="calendar container-fluid bg-dark">
+    <div class="row my-3 text-center">
+      <div class="col-12">
         <CalendarPics />
       </div>
     </div>
